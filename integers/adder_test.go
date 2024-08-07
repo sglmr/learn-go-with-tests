@@ -12,6 +12,7 @@ func ExampleAdd() {
 }
 
 func TestAdder(t *testing.T) {
+	t.Parallel()
 	sum := Add(2, 2)
 	expected := 4
 	assertEqualInts(t, sum, expected)

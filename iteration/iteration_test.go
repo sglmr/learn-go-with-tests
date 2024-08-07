@@ -3,6 +3,7 @@ package iteration
 import "testing"
 
 func TestRepeat(t *testing.T) {
+	t.Parallel()
 	repeated := Repeat("a")
 	expected := "aaaaa"
 
@@ -12,6 +13,7 @@ func TestRepeat(t *testing.T) {
 }
 
 func TestExampleRepeat(t *testing.T) {
+	t.Parallel()
 	repeated := ExampleRepeat("a", 5)
 	expected := "aaaaa"
 	if repeated != expected {
