@@ -8,7 +8,7 @@ import (
 func ExampleAdd() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
-	// Output: 6go
+	// Output: 6
 }
 
 func TestAdder(t *testing.T) {
